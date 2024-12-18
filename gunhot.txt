@@ -1,0 +1,19 @@
+# milvus 서버 띄우기
+wget https://github.com/milvus-io/milvus/releases/download/v2.4.17/milvus-standalone-docker-compose.yml -O docker-compose.yml
+docker-compose up -d
+
+# milvus 서버 내리기
+docker-compose down
+
+# manageMilvus.py 사용법
+# 데이터 삽입
+python manageMilvus.py insert data_001.txt
+
+# 컬렉션 목록 조회
+python manageMilvus.py list
+
+# 컬렉션 검색
+python manageMilvus.py search collection_001 "검색할 텍스트" --top-k 5
+
+# 컬렉션 삭제
+python manageMilvus.py delete collection_001

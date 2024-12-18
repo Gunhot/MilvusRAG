@@ -1,0 +1,8 @@
+# volumes 내부 파일 제외
+volumes/*
+!volumes/.gitkeep
+
+# local_multilingual_e5_large_instruct 내부 파일 제외
+local_multilingual_e5_large_instruct/*
+!local_multilingual_e5_large_instruct/.gitkeep
+
